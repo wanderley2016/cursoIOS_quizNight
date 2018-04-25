@@ -252,6 +252,7 @@
                     <connections>
                         <outlet property="dicaImg" destination="cVd-tm-SZx" id="Gyi-8u-kxN"/>
                         <outlet property="stackbotoes" destination="YkZ-4D-SJ8" id="GYd-yq-KJk"/>
+                        <segue destination="Jyi-hn-FUe" kind="show" identifier="fimDeJogo" id="FPm-Oz-oDG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwa-GW-SxO" sceneMemberID="firstResponder"/>
@@ -304,6 +305,9 @@
                                                 <include reference="iWI-TI-6B9"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="HSd-pZ-BWl" kind="unwind" unwindAction="voltandoPraCaWithSegue:" id="MN0-SQ-Nbv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.80260059930000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,6 +349,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ch-4d-90H" sceneMemberID="firstResponder"/>
+                <exit id="HSd-pZ-BWl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1598.5507246376812" y="132.88043478260872"/>
         </scene>

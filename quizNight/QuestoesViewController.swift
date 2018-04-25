@@ -35,6 +35,7 @@ class QuestoesViewController: UIViewController {
     
     func carregarQuestoes() {
         if(cities.count == 0){
+            performSegue(withIdentifier: "fimDeJogo", sender: self)
             return
         }
         
@@ -77,6 +78,7 @@ class QuestoesViewController: UIViewController {
         else
         {
             print ("Errou")
+            performSegue(withIdentifier: "fimDeJogo", sender: self)
         }
         carregarQuestoes()
         
